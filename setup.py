@@ -15,13 +15,13 @@ def main():
 
     # Install PyTorch with CUDA
     torch_cmd = (
-        f"{sys.executable} -m pip install torch torchvision torchaudio "
+        f'"{sys.executable}" -m pip install torch torchvision torchaudio '
         "--index-url https://download.pytorch.org/whl/cu118"
     )
     install_with_progress(torch_cmd)
 
     # Install YOLO
-    yolo_cmd = f"{sys.executable} -m pip install ultralytics"
+    yolo_cmd = f'"{sys.executable}" -m pip install ultralytics'
     install_with_progress(yolo_cmd)
 
     try:
