@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from ultralytics import YOLO
 
-VIDEO_PATH = "sample_basketball_2.mp4"
+VIDEO_PATH = "sample_basketball.mp4"
 OUTPUT_VIDEO_PATH = "runs/track/basketball_tracking.mp4"
 CLASSES_OF_INTEREST = [0, 32] # 0: person, 32: sports ball
 CONFIDENCE_THRESHOLD = 0.5
@@ -72,4 +72,5 @@ def main():
     print(f"Output video saved to: {os.path.abspath(OUTPUT_VIDEO_PATH)}")
 
 if __name__ == "__main__":
+
     main()
